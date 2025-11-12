@@ -34,3 +34,11 @@ a {
 .uk-navbar-container .uk-navbar-item {
     color: #000000;
 }
+
+.uk-card-secondary {
+  background-color: #181818;
+  color: #ededed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #4e4e4e;
+  border-radius: 10px;
+}
