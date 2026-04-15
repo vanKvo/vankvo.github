@@ -1,44 +1,80 @@
-html {
-    font-family: IBM Plex Mono;
-    background-color: #FFFDD0;
-    color: #000000;
+/* Custom Palette Variables */
+:root {
+    --bg-warm: #FFFBF5;       /* Soft Cream */
+    --text-main: #2D2424;     /* Deep Espresso (Softer than Black) */
+    --accent-warm: #E07A5F;   /* Terracotta */
+    --accent-bright: #F2CC8F; /* Muted Gold for highlights */
+    --card-bg: #FFFFFF;
 }
 
-body {
-    background-color: #fff;
-    color: #000000;
+html, body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: var(--bg-warm);
+    color: var(--text-main);
+    scroll-behavior: smooth;
 }
 
-/* Override UIKit light text color */
-.uk-light {
-    color: #000000;
+/* Typography & Links */
+h1, h2, h3, h4, .uk-logo {
+    color: var(--text-main) !important;
+    font-weight: 700;
 }
 
 a {
-    color: #000000;
+    color: var(--accent-warm);
+    transition: 0.3s ease;
 }
 
+a:hover {
+    color: var(--accent-bright);
+    text-decoration: none;
+}
+
+/* Navbar Personalization */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #ffffff;
+    background: var(--bg-warm);
 }
 
-.uk-navbar-container .uk-navbar-nav > li > a {
-    color: #000000;
+.uk-navbar-item, .uk-navbar-nav > li > a {
+    color: var(--text-main) !important;
+    text-transform: lowercase; /* Minimalist feel */
 }
 
-.uk-navbar-container .uk-navbar-nav > li > a:hover {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.uk-navbar-container .uk-navbar-item {
-    color: #000000;
-}
-
+/* Refined Cards for Projects */
 .uk-card-secondary {
-  background-color: #181818;
-  color: #ededed;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  border: 1px solid #4e4e4e;
-  border-radius: 10px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    border: 1px solid #eee;
+    border-left: 5px solid var(--accent-warm); /* Creative accent strip */
+    border-radius: 4px; /* Functional, square-ish look */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    transition: transform 0.2s ease;
+}
+
+.uk-card-secondary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(224, 122, 95, 0.15);
+}
+
+.uk-card-secondary h4 {
+    color: var(--accent-warm) !important;
+}
+
+/* Specifically target paragraph text */
+.uk-card-secondary p,
+.uk-card-secondary a {
+    color: #000000 !important;
+}
+
+/* Buttons */
+.uk-button-secondary {
+    background-color: var(--accent-warm);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.uk-button-secondary:hover {
+    background-color: var(--text-main);
+    color: var(--accent-bright);
 }
