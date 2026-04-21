@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,134 +12,158 @@
 
     <title>Portfolio</title>
 </head>
+
 <body>
-<!-- Navigation Bar -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Van Vo</a>
+    <!-- Navigation Bar -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right"
+        uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">Van Vo</a>
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav uk-light">
+                <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
+                <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Navigation Bar Ends  -->
+
+    <!-- Navigation Bar Mobile -->
+    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right"
+        uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+
+        <div class="uk-navbar-left">
+            <a href="" class="uk-navbar-item uk-logo uk-light">Van Vo</a>
+        </div>
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav uk-light">
+                <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Change This -->
+    <div id="offcanvas-nav" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
+                <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
+                <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
+                <li class="uk-active"><a href="#about">Contact</a></li>
+            </ul>
+
+
+
+
+        </div>
     </div>
-    <div class="uk-navbar-right">
 
-        <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>Contact</a></li>
-        </ul>
+    <!-- Navigation Bar Mobile Ends -->
+    <!-- Home -->
+    <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Van Vo, <span
+                style="color: var(--accent-warm)">Software Engineer</span></h1>
+        <h2 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Full-Stack Development | Cloud
+            Architecture | AI Integration</h2>
+        <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About
+            Me</a>
 
-    </div>
-</nav>
-<!-- Navigation Bar Ends  -->
+    </section>
 
-<!-- Navigation Bar Mobile -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">Van Vo</a>
-    </div>
-    <div class="uk-navbar-right">
-
-        <ul class="uk-navbar-nav uk-light">
-            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
-
-        </ul>
-
-    </div>
-</nav>
-<!-- Change This -->
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="#about">Contact</a></li>
-        </ul>
-
-
-
-
-    </div>
-</div>
-
-<!-- Navigation Bar Mobile Ends -->
-<!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Van Vo, <span style="color: var(--accent-warm)">Software Engineer</span></h1>
-   <h2 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">Full-Stack Development | Cloud Architecture | AI Integration</h2>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
-
-</section>
-
-<!-- Home Ends -->
-<br>
-
-
-<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
-
-<!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-<!-- Change here to ur paragraph -->
-<p class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    I am a Software Engineer and AWS Solutions Architect driven by the challenge of translating complex, manual business workflows into automated solutions that are both intuitive and high-value. With a B.S. in IT from George Mason University—specializing in Database Technologies and Programming—my approach to full-stack development is rooted in the conviction that software must be reliable and easy-to-use.</br></br>
-    Whether I’m architecting event-driven systems within the AWS ecosystem or engineering context-aware AI agents, my objective remains constant: building intelligent tools that solve real-world frictions. I am particularly passionate about the intersection of Cloud Architecture and Generative AI, where I leverage RAG-based systems to bridge the gap between raw data and human decision-making. To me, success is defined by delivering resilient, secure, and functional systems that scale effortlessly while providing a seamless, meaningful experience for the end user.
-</p>
-   
-<a href="https://github.com/vanKvo" class="uk-margin-xlarge-left uk-button-text" uk-icon="github-alt"></a> &nbsp;<a href="https://www.linkedin.com/in/van-vo8899/" class="uk-button-text" uk-icon="linkedin"></a> &nbsp;<a href="" class="uk-button-text" uk-icon="code"></a> &nbsp;
-
-<!-- About Me Ends -->
-
-
-
-
-</section>
-
-<!-- Projects Section -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-<p class="uk-margin-xlarge-left">Projects that I've been working on: </p>
-
-<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Conversational Chatbot</h4>
-        <p>The application integrating OpenAI with LangChain to build a context-aware chatbot for customer inquiries.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/langchain-openai-chatbot">
-            <span uk-icon="icon: link">
-            </span> Generative AI Project! </a>
-    </div>
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>AI Summarizer</h4>
-        <p> This is the AI-powered app that can accept native or scanned documents and summarize their content.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/ai-summary-bedrock-langchain">
-            <span uk-icon="icon: link">
-            </span> AI Cloud Project! </a>
-    </div>
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Vietstar Shipping</h4>
-        <p>A MAMP (Apache, Nginx, PHP and MySQL) stack shipping application for the Vietstar Shipping company. This application is used by the shipping company's employees to digitalize shipping procedures, and streamline inventory management process for their customers.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/vietstar">
-            <span uk-icon="icon: link">
-            </span> Senior Capstone Project! </a>
-    </div>
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Green World</h4>
-        <p>An environmental website that promotes environment-friendly activities.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/green-world">
-            <span uk-icon="icon: link">
-            </span> My first website project! </a>
-    </div>
-    </div>
+    <!-- Home Ends -->
     <br>
 
 
-</section>
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-</div>
-<!-- Projects Section Ends -->
-    
+    <hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
+
+    <!-- About Me -->
+    <section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
+        <!-- Change here to ur paragraph -->
+        <p class="uk-margin-xlarge-left uk-margin-xlarge-right">
+            I am a Software Engineer and AWS Solutions Architect driven by the challenge of translating complex, manual
+            business workflows into automated solutions that are both intuitive and high-value. With a B.S. in IT from
+            George Mason University—specializing in Database Technologies and Programming—my approach to full-stack
+            development is rooted in the conviction that software must be reliable and easy-to-use.</br></br>
+            Whether I’m architecting event-driven systems within the AWS ecosystem or engineering context-aware AI
+            agents, my objective remains constant: building intelligent tools that solve real-world frictions. I am
+            particularly passionate about the intersection of Cloud Architecture and Generative AI, where I leverage
+            RAG-based systems to bridge the gap between raw data and human decision-making. To me, success is defined by
+            delivering resilient, secure, and functional systems that scale effortlessly while providing a seamless,
+            meaningful experience for the end user.
+        </p>
+
+        <a href="https://github.com/vanKvo" class="uk-margin-xlarge-left uk-button-text" uk-icon="github-alt"></a>
+        &nbsp;<a href="https://www.linkedin.com/in/van-vo8899/" class="uk-button-text" uk-icon="linkedin"></a> &nbsp;<a
+            href="" class="uk-button-text" uk-icon="code"></a> &nbsp;
+
+        <!-- About Me Ends -->
+
+
+
+
+    </section>
+
+    <!-- Projects Section -->
+    <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    <section id="projects"
+        class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
+        <h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
+        <p class="uk-margin-xlarge-left">Projects that I've been working on: </p>
+
+        <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
+            <!-- Change all of this to ur projects -->
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Conversational Chatbot</h4>
+                <p>The application integrating OpenAI with LangChain to build a context-aware chatbot for customer
+                    inquiries.</p>
+                <a class="uk-button-text uk-text-decoration-none"
+                    href="https://github.com/vanKvo/langchain-openai-chatbot">
+                    <span uk-icon="icon: link">
+                    </span> Generative AI Project! </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>AI Summarizer</h4>
+                <p> This is the AI-powered app that can accept native or scanned documents and summarize their content.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none"
+                    href="https://github.com/vanKvo/ai-summary-bedrock-langchain">
+                    <span uk-icon="icon: link">
+                    </span> AI Cloud Project! </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Vietstar Shipping</h4>
+                <p>A MAMP (Apache, Nginx, PHP and MySQL) stack shipping application for the Vietstar Shipping company.
+                    This application is used by the shipping company's employees to digitalize shipping procedures, and
+                    streamline inventory management process for their customers.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/vietstar-shipping">
+                    <span uk-icon="icon: link">
+                    </span> Senior Capstone Project! </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Green World</h4>
+                <p>An environmental website that promotes environment-friendly activities.</p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/green-world">
+                    <span uk-icon="icon: link">
+                    </span> My first website project! </a>
+            </div>
+        </div>
+        <br>
+
+
+    </section>
+    <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
+    </div>
+    <!-- Projects Section Ends -->
+
 </body>
+
 </html>
