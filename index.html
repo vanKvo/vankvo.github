@@ -91,14 +91,14 @@
         <p class="uk-margin-xlarge-left uk-margin-xlarge-right">
             I am a Software Engineer and AWS Solutions Architect driven by the challenge of translating complex, manual
             business workflows into automated solutions that are both intuitive and high-value. With a B.S. in IT from
-            George Mason University—specializing in Database Technologies and Programming—my approach to full-stack
+            George Mason University specializing in Database Technologies and Programming, my approach to full-stack
             development is rooted in the conviction that software must be reliable and easy-to-use.</br></br>
-            Whether I’m architecting event-driven systems within the AWS ecosystem or engineering context-aware AI
-            agents, my objective remains constant: building intelligent tools that solve real-world frictions. I am
-            particularly passionate about the intersection of Cloud Architecture and Generative AI, where I leverage
-            RAG-based systems to bridge the gap between raw data and human decision-making. To me, success is defined by
-            delivering resilient, secure, and functional systems that scale effortlessly while providing a seamless,
-            meaningful experience for the end user.
+            Whether I’m architecting cloud-native systems within the AWS ecosystem or engineering context-aware AI
+            agents, my objective remains constant: building automated and intelligent tools that solve real-world
+            frictions. I am particularly passionate about the intersection of Cloud Architecture and Generative AI,
+            where I leverage AI and RAG-based systems to bridge the gap between raw data and human decision-making. To
+            me, success is defined by delivering resilient, secure, and functional systems that scale effortlessly while
+            providing a seamless, meaningful experience for the end user.
         </p>
 
         <a href="https://github.com/vanKvo" class="uk-margin-xlarge-left uk-button-text" uk-icon="github-alt"></a>
@@ -116,37 +116,98 @@
     <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
     <section id="projects"
         class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-        <h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-        <p class="uk-margin-xlarge-left">Projects that I've been working on: </p>
+        <h3 class="uk-margin-xlarge-left uk-light">Featured Cloud & AI Projects</h3>
 
         <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
             <!-- Change all of this to ur projects -->
             <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-                <h4>Conversational Chatbot</h4>
-                <p>The application integrating OpenAI with LangChain to build a context-aware chatbot for customer
-                    inquiries.</p>
+                <h4>FinTracker (SaaS)</h4>
+                <p>A cloud-native SaaS platform designed to transform fragmented financial data into actionable
+                    intelligence. This system ingests and normalizes disparate bank statements into a unified schema,
+                    enabling high-precision spending tracking and budget forecasting. The platform integrates AWS
+                    Comprehend
+                    for automated transaction categorization and AWS Bedrock, Langchain, & RAG to generate
+                    natural-language
+                    financial summaries, including spending pattern analysis and explanations of budget variances,
+                    shifting the user experience from manual data entry to automated financial advisory.
+                </p>
+                <p>
+                    Key Tech: Java (Spring Boot), Python, AWS Serverless (Lambda, Step Functions, ECS, DynamoDB,
+                    Cognito), PostgreSQL, AWS
+                    Comprehend, AWS Bedrock (AI/ML), LangChain, AWS CDK (IaC), Microservices Architecture.
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/fintracker">
+                    <span uk-icon="icon: link">
+                    </span> Financial Intelligence & AI-Driven Insights! [github]</a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Verity Portal</h4>
+                <p>An compliance automation engine engineered to replace manual,
+                    error-prone data reconciliation workflows. The portal centralizes siloed data from HR, IT,
+                    Security, and Finance, performing domain-driven validation to detect compliance violations in
+                    real-time.
+                    By automating the "source of truth" verification process, the application significantly reduces
+                    manual oversight, detect violations early, and improves the auditability of internal records.
+                </p>
+                <p>
+                    Key Tech: Python, Angular, PostgreSQL, Docker, AWS App Runner, Hexagonal Architecture for
+                    Domain-Driven Design (DDD).
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/verity-portal">
+                    <span uk-icon="icon: link">
+                    </span> Eliminating "Excel Engineering" through Automation! [github] </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Vietstar Shipping</h4>
+                <p>A logistics and inventory management application developed for the Vietstar Shipping company.
+                    This application is used by the shipping company's employees to digitalize shipping procedures, and
+                    streamline inventory management process for their customers.
+                    I led a team of 5 to develop shipping and inventory systems for the logistics company. The project
+                    was initially built as a Capstone project,
+                    then modernized with production-grade cloud infrastructure and DevOps practices to reduce
+                    environment provisions and to improve
+                    system reliability, scalability, and high availability. </p>
+                <p>
+                    Key Tech: PHP, MySQL, AWS (EC2, ASG, RDS Multi-AZ, ALB), Terraform (IaC), GitHub Actions (CI/CD).
+                </p>
+                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/vietstar-shipping">
+                    <span uk-icon="icon: link">
+                    </span> Modernizing legacy logistics through digital automation and scalable cloud infrastructure to
+                    streamline operations! [github] </a>
+            </div>
+            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+                <h4>Context-Aware Customer Support Assistant</h4>
+                <p>Engineered a conversational agent designed to handle customer inquiries with high precision.
+                    By leveraging LangChain and RAG (Retrieval-Augmented Generation), the chatbot moves beyond generic
+                    responses, utilizing prompt chainings, embeddings, and a vector-based knowledge base to provide
+                    contextually accurate answers rooted in company-specific data. This architecture minimizes LLM
+                    hallucinations and boost response accuracy.</p>
+                <p>
+                    Key Tech: LangChain, OpenAI, Python, FastAPI, RAG Architecture.
+                </p>
                 <a class="uk-button-text uk-text-decoration-none"
                     href="https://github.com/vanKvo/langchain-openai-chatbot">
                     <span uk-icon="icon: link">
-                    </span> Generative AI Project! </a>
+                    </span> Generative AI & Knowledge Automation! </a>
             </div>
             <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-                <h4>AI Summarizer</h4>
-                <p> This is the AI-powered app that can accept native or scanned documents and summarize their content.
+                <h4>Intelligent Document Analyzer (AI Summarizer)</h4>
+                <p>A document intelligence platform capable of processing both native and scanned PDFs to extract
+                    concise summaries.
+                    The application bridges the gap between manual document review and automated data synthesis,
+                    utilizing OCR (Optical Character Recognition)
+                    to normalize scanned content before passing it through an NLP pipeline. Architected for scalability,
+                    the system ensures that
+                    high-volume document ingestion remains cost-efficient and performant.
+                </p>
+                <p>
+                    Key Tech: Python, Pydantic, AWS Textract (OCR), AWS Bedrock, Langchain, Chroma vector
+                    store, MongoDB
                 </p>
                 <a class="uk-button-text uk-text-decoration-none"
                     href="https://github.com/vanKvo/ai-summary-bedrock-langchain">
                     <span uk-icon="icon: link">
-                    </span> AI Cloud Project! </a>
-            </div>
-            <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-                <h4>Vietstar Shipping</h4>
-                <p>A MAMP (Apache, Nginx, PHP and MySQL) stack shipping application for the Vietstar Shipping company.
-                    This application is used by the shipping company's employees to digitalize shipping procedures, and
-                    streamline inventory management process for their customers.</p>
-                <a class="uk-button-text uk-text-decoration-none" href="https://github.com/vanKvo/vietstar-shipping">
-                    <span uk-icon="icon: link">
-                    </span> Senior Capstone Project! </a>
+                    </span> Turning Unstructured Data into Actionable Insights! </a>
             </div>
             <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
                 <h4>Green World</h4>
